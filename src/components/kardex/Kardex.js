@@ -98,7 +98,7 @@ export default class Kardex extends React.Component {
                     {this.state.action === 'ver' ? <Ver id={this.state.id} /> : null}
                     {this.state.action === 'editar' ? <Editar ocultar={ocultar} showToast={showToast} id={this.state.id} /> : null}
                 </Dialog>
-                <DataTable style={{ position: 'sticky' }} value={this.state.list} loading={this.state.loading} showGridlines scrollable scrollHeight="25rem" rowHover size="small" scrollDirection="vertical" columnResizeMode="expand" resizableColumns emptyMessage="No se ha registrado ningun movimiento" header={header} filters={this.state.filters}>
+                <DataTable className="atras" value={this.state.list} loading={this.state.loading} showGridlines scrollable scrollHeight="28rem" rowHover size="small" scrollDirection="vertical" columnResizeMode="expand" resizableColumns emptyMessage="No se ha registrado ningun movimiento" header={header} filters={this.state.filters}>
                     <Column header="Movimiento" field="tipo" />
                     <Column header="Categoria" field="categoria" />
                     <Column header="Nombre" field="nombre" />

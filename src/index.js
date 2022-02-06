@@ -19,6 +19,8 @@ import 'primereact/resources/primereact.min.css'
 import 'primeicons/primeicons.css'
 import '/node_modules/primeflex/primeflex.css';
 
+import './index.css';
+
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>

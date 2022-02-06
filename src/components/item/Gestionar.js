@@ -115,7 +115,7 @@ export default class Gestionar extends React.Component {
                     {this.state.action === 'eliminar' ? <Eliminar ocultar={ocultar} showToast={showToast} id={this.state.id} /> : null}
                     {this.state.action === 'stock' ? <EditarStock ocultar={ocultar} showToast={showToast} id={this.state.id} /> : null}
                 </Dialog>
-                <DataTable style={{ position: 'sticky' }} value={this.state.list} loading={this.state.loading} showGridlines scrollable scrollHeight="25rem" rowHover size="small" scrollDirection="vertical" columnResizeMode="expand" resizableColumns emptyMessage="No se ha registrado ningun item" header={header}>
+                <DataTable className="atras" value={this.state.list} loading={this.state.loading} showGridlines scrollable scrollHeight="28rem" rowHover size="small" scrollDirection="vertical" columnResizeMode="expand" resizableColumns emptyMessage="No se ha registrado ningun item" header={header}>
                     <Column header="Categoria" field="categoria" />
                     <Column header="Nombre" field="nombre" />
                     <Column header="Acciones" field="_id" body={actions} />

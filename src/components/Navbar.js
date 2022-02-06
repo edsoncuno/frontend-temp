@@ -63,7 +63,7 @@ export default function Navbar() {
     ];
     return (
         <React.Fragment>
-            <Menubar model={items} start={start} />
+            <Menubar model={items} start={start} className="adelante" />
         </React.Fragment>
     );
 }

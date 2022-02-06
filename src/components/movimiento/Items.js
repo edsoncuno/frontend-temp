@@ -80,7 +80,7 @@ export default class Items extends React.Component {
                     {this.state.action === 'entrada' ? <Crear ocultar={ocultar} showToast={showToast} id={this.state.id} tipo={this.state.action} /> : null}
                     {this.state.action === 'salida' ? <Crear ocultar={ocultar} showToast={showToast} id={this.state.id} tipo={this.state.action} /> : null}
                 </Dialog>
-                <DataTable style={{ position: 'sticky' }} value={this.state.list} loading={this.state.loading} showGridlines scrollable scrollHeight="28rem" rowHover size="small" scrollDirection="vertical" columnResizeMode="expand" resizableColumns emptyMessage="No se ha registrado ningun item">
+                <DataTable className="atras" value={this.state.list} loading={this.state.loading} showGridlines scrollable scrollHeight="33rem" rowHover size="small" scrollDirection="vertical" columnResizeMode="expand" resizableColumns emptyMessage="No se ha registrado ningun item">
                     <Column header="Categoria" field="categoria" />
                     <Column header="Nombre" field="nombre" />
                     <Column header="Stock" field="stock" />
