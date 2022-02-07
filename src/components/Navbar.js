@@ -37,10 +37,6 @@ export default function Navbar() {
         navigate('/inventario/movimiento')
     }, [navigate]);
 
-    const irInventarioReporte = React.useCallback(() => {
-        navigate('/inventario/reporte')
-    }, [navigate]);
-
     const items = [
         { label: 'Inicio', icon: 'pi pi-home', command: () => { irInicio() } },
         {
@@ -56,8 +52,7 @@ export default function Navbar() {
             label: 'Inventario',
             items: [
                 { label: 'Kardex', command: () => { irInventarioKardex() } },
-                { label: 'Movimiento', command: () => { irInventarioMovimiento() } },
-                { label: 'Reporte', command: () => { irInventarioReporte() } }
+                { label: 'Movimiento', command: () => { irInventarioMovimiento() } }
             ]
         }
     ];

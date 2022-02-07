@@ -12,7 +12,6 @@ import GestionarProveedor from './pages/gestionar/Proveedor';
 import GestionarCategoria from './pages/gestionar/Categoria';
 import InventarioKardex from './pages/inventario/Kardex';
 import InventarioMovimiento from './pages/inventario/Movimiento';
-import InventarioReporte from './pages/inventario/Reporte';
 
 import 'primereact/resources/themes/md-light-indigo/theme.css'
 import 'primereact/resources/primereact.min.css'
@@ -35,7 +34,6 @@ ReactDOM.render(
                     <Route path="inventario/">
                         <Route path="kardex" element={<InventarioKardex />} />
                         <Route path="movimiento" element={<InventarioMovimiento />} />
-                        <Route path="reporte" element={<InventarioReporte />} />
                     </Route>
                 </Route>
             </Routes>
