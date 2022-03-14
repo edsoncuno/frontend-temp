@@ -10,6 +10,7 @@ import GestionarItem from './pages/gestionar/Item';
 import GestionarUnidadDeMedida from './pages/gestionar/UnidadDeMedida';
 import GestionarProveedor from './pages/gestionar/Proveedor';
 import GestionarCategoria from './pages/gestionar/Categoria';
+import GestionarCliente from './pages/gestionar/cliente';
 import InventarioKardex from './pages/inventario/Kardex';
 import InventarioMovimiento from './pages/inventario/Movimiento';
 
@@ -30,6 +31,7 @@ ReactDOM.render(
                         <Route path="item" element={<GestionarItem />} />
                         <Route path="unidad-de-medida" element={<GestionarUnidadDeMedida />} />
                         <Route path="proveedor" element={<GestionarProveedor />} />
+                        <Route path='cliente' element={<GestionarCliente />} />
                     </Route>
                     <Route path="inventario/">
                         <Route path="kardex" element={<InventarioKardex />} />

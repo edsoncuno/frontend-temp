@@ -17,6 +17,10 @@ export default function Navbar() {
         navigate('/gestionar/categoria')
     }, [navigate]);
 
+    const irGestionarCliente = React.useCallback(() => {
+        navigate('/gestionar/cliente')
+    }, [navigate]);
+
     const irGestionarItem = React.useCallback(() => {
         navigate('/gestionar/item')
     }, [navigate]);
@@ -42,6 +46,7 @@ export default function Navbar() {
         {
             label: 'Gestionar',
             items: [
+                { label: 'Cliente', command: () => { irGestionarCliente() } },
                 { label: 'Categoria', command: () => { irGestionarCategoria() } },
                 { label: 'Item', command: () => { irGestionarItem() } },
                 { label: 'Proveedor', command: () => { irGestionarProveedor() } },
