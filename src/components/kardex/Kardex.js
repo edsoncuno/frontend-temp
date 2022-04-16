@@ -100,7 +100,6 @@ export default class Kardex extends React.Component {
                 </Dialog>
                 <DataTable className="atras" value={this.state.list} loading={this.state.loading} showGridlines scrollable scrollHeight="28rem" rowHover size="small" scrollDirection="vertical" columnResizeMode="expand" resizableColumns emptyMessage="No se ha registrado ningun movimiento" header={header} filters={this.state.filters}>
                     <Column header="Movimiento" field="tipo" />
-                    <Column header="Categoria" field="categoria" />
                     <Column header="Nombre" field="nombre" />
                     <Column header="Fecha" field="fecha" />
                     <Column header="Cantidad" field="cantidad" />

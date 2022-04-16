@@ -1,5 +1,5 @@
 import React from "react";
-import Gestionar from "../../components/cliente/gestionar";
+import Gestionar from "../../components/cliente/Gestionar";
 
 export default function App() {
     return (

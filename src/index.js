@@ -10,7 +10,7 @@ import GestionarItem from './pages/gestionar/Item';
 import GestionarUnidadDeMedida from './pages/gestionar/UnidadDeMedida';
 import GestionarProveedor from './pages/gestionar/Proveedor';
 import GestionarCategoria from './pages/gestionar/Categoria';
-import GestionarCliente from './pages/gestionar/cliente';
+import GestionarCliente from './pages/gestionar/Cliente';
 import InventarioKardex from './pages/inventario/Kardex';
 import InventarioMovimiento from './pages/inventario/Movimiento';
 

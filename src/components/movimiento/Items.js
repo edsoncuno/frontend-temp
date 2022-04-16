@@ -6,6 +6,7 @@ import { Dialog } from 'primereact/dialog';
 import { getItems } from './../../api/apiItem';
 import { Toast } from 'primereact/toast';
 import Crear from './Crear';
+import RegistrarSalida from "./RegistrarSalida"
 
 export default class Items extends React.Component {
     constructor(props) {
@@ -78,7 +79,7 @@ export default class Items extends React.Component {
                 <Toast ref={(el) => this.toast = el} />
                 <Dialog visible={this.state.isVisible} modal={false} onHide={() => { this.setState({ isVisible: false }) }}>
                     {this.state.action === 'entrada' ? <Crear ocultar={ocultar} showToast={showToast} id={this.state.id} tipo={this.state.action} /> : null}
-                    {this.state.action === 'salida' ? <Crear ocultar={ocultar} showToast={showToast} id={this.state.id} tipo={this.state.action} /> : null}
+                    {this.state.action === 'salida' ? <RegistrarSalida ocultar={ocultar} showToast={showToast} id={this.state.id} tipo={this.state.action} /> : null}
                 </Dialog>
                 <DataTable className="atras" value={this.state.list} loading={this.state.loading} showGridlines scrollable scrollHeight="33rem" rowHover size="small" scrollDirection="vertical" columnResizeMode="expand" resizableColumns emptyMessage="No se ha registrado ningun item">
                     <Column header="Categoria" field="categoria" />
